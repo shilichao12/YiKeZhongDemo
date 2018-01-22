@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="10dp">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/sdv"
+        android:layout_width="40dp"
+        android:layout_height="40dp"></android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:id="@+id/name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="50dp"
+        android:text="天蝎喝牛奶"
+        android:textColor="#ff00" />
+
+    <TextView
+        android:id="@+id/time"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name"
+        android:layout_marginLeft="50dp" />
+
+    <TextView
+        android:id="@+id/title_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/sdv"
+        android:text="天气真没好"
+        android:textSize="18dp" />
+
+    <com.dou361.ijkplayer.widget.IjkVideoView
+        android:id="@+id/ijv"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_below="@id/title_name"
+        android:layout_marginTop="20dp"></com.dou361.ijkplayer.widget.IjkVideoView>
+
+    <TextView
+        android:id="@+id/commentA"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/ijv"
+        android:layout_marginTop="30dp"
+        android:textSize="15dp"
+        android:text="骑猪上高速:" />
+    <TextView
+        android:id="@+id/commentB"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/commentA"
+        android:layout_marginTop="10dp"
+        android:textSize="15dp"
+        android:text="骑猪上高速:" />
+</RelativeLayout>
